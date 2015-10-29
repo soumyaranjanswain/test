@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Work</title>
+</head>
+<body>
+<input type="text" id="textbox1"></input>
+<button id="button1" onclick="myFunction()">click me</button>
+<p id="p1"> </p>
+<script>
+
+function myFunction()
+{
+	var y=[];
+	var k=0;
+	var x = parseInt(document.getElementById("textbox1").value);
+	document.getElementById("p1").innerHTML = x ;
+	for(var i=1;i<=10;i++)
+	{
+		y[k]=x*i;
+		document.write(x + "*" + (k+1) + "="+ y[k]);
+		document.write("<br>")
+		k++;
+	}
+
+}
+
+</script>
+
+</body>
+</html>
